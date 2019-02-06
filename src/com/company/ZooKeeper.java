@@ -72,6 +72,7 @@ public class ZooKeeper {
 
                             break;
                         case "4":
+                            zoo.viewAllAnimalsInZoo();
                             break;
                         case "5":
                             tempSinglePen.showAllAnimals();

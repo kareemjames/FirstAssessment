@@ -33,6 +33,12 @@ public class Zoo {
         }
     }
 
+    public void viewAllAnimalsInZoo() {
+        for(int i = 0; i < pens.size(); i++) {
+            System.out.println(pens.get(i).getAnimals() + "\n" + pens.get(i).getBabyAnimals());
+        }
+    }
+
     @Override
     public String toString() {
         return "Zoo{" +
