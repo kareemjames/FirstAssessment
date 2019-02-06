@@ -37,7 +37,11 @@ public class ZooKeeper {
                     userInput = scan.nextLine();
                     Pen tempSinglePen = zoo.singlePen(userInput);
                     System.out.println("1 - add animal\n" +
-                            "2 - add baby animmal");
+                            "2 - add baby animmal\n" +
+                            "3 - remove animal\n" +
+                            "4 - remove baby animal\n" +
+                            "5 - Show all animals in pen"
+                    );
                     userInput = scan.nextLine();
                     switch(userInput) {
                         case "1":
@@ -63,6 +67,14 @@ public class ZooKeeper {
 
                             BabyAnimal tempBabyAnimal = new BabyAnimal(tempBabySpecies, tempBabySize, tempBabyGender, tempBabyPreferredFood);
                             tempSinglePen.addBabyAnimalToPen(tempBabyAnimal);
+                            break;
+                        case "3":
+
+                            break;
+                        case "4":
+                            break;
+                        case "5":
+                            tempSinglePen.showAllAnimals();
                             break;
                         default:
                             break;

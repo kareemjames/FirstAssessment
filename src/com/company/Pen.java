@@ -35,6 +35,14 @@ public class Pen {
                 '}';
     }
 
+    public void showAllAnimals() {
+        for(int i = 0; i < animals.size(); i++){
+            for(int j = 0; j < babyAnimals.size(); j++) {
+                System.out.println(animals.get(i) + "\n " + babyAnimals.get(j));
+            }
+        }
+    }
+
     public String getName() {
         return name;
     }
