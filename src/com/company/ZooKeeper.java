@@ -41,6 +41,14 @@ public class ZooKeeper {
                     userInput = scan.nextLine();
                     switch(userInput) {
                         case "1":
+                            System.out.println("Please add the species");
+                            String tempSpecies = scan.nextLine();
+                            System.out.println("Please add a size e.g: s m l");
+                            String tempSize = scan.nextLine();
+                            System.out.println("Please add a gender");
+                            String tempGender = scan.nextLine();
+                            Animal tempAnimal = new Animal(tempSpecies, tempSize, tempGender);
+                            tempSinglePen.addAnimalToPen(tempAnimal);
                             break;
                         case "2":
                             break;

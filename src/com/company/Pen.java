@@ -17,11 +17,13 @@ public class Pen {
     }
 
     public void addAnimalToPen(Animal animal) {
-
+        animals.add(animal);
+        System.out.println(animals.size());
     }
 
     public void addBabyAnimalToPen(BabyAnimal babyAnimal) {
-
+        babyAnimals.add(babyAnimal);
+        System.out.println(babyAnimals.size());
     }
 
     @Override
