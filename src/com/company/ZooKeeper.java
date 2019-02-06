@@ -33,6 +33,10 @@ public class ZooKeeper {
                     break;
                 case "3":
                     zoo.viewAllPens();
+                    System.out.println("Please choose the name of the  pen you would like to add animals to");
+                    userInput = scan.nextLine();
+                    zoo.singlePen(userInput);
+
                     break;
                 case "4":
                     break;
