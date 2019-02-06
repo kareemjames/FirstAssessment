@@ -5,6 +5,7 @@ public class ZooDemo {
 
     public static void main(String[] args) {
 	    ZooKeeper zooKeeper = new ZooKeeper();
+
 	    zooKeeper.startPrompt();
     }
 }
