@@ -47,10 +47,22 @@ public class ZooKeeper {
                             String tempSize = scan.nextLine();
                             System.out.println("Please add a gender");
                             String tempGender = scan.nextLine();
+
                             Animal tempAnimal = new Animal(tempSpecies, tempSize, tempGender);
                             tempSinglePen.addAnimalToPen(tempAnimal);
                             break;
                         case "2":
+                            System.out.println("Please add the species");
+                            String tempBabySpecies = scan.nextLine();
+                            System.out.println("Please add a size e.g: s m l");
+                            String tempBabySize = scan.nextLine();
+                            System.out.println("Please add a gender");
+                            String tempBabyGender = scan.nextLine();
+                            System.out.println("Please add the preferred food");
+                            String tempBabyPreferredFood = scan.nextLine();
+
+                            BabyAnimal tempBabyAnimal = new BabyAnimal(tempBabySpecies, tempBabySize, tempBabyGender, tempBabyPreferredFood);
+                            tempSinglePen.addBabyAnimalToPen(tempBabyAnimal);
                             break;
                         default:
                             break;
