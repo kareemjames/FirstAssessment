@@ -35,7 +35,18 @@ public class ZooKeeper {
                     zoo.viewAllPens();
                     System.out.println("Please choose the name of the  pen you would like to add animals to");
                     userInput = scan.nextLine();
-                    zoo.singlePen(userInput);
+                    Pen tempSinglePen = zoo.singlePen(userInput);
+                    System.out.println("1 - add animal\n" +
+                            "2 - add baby animmal");
+                    userInput = scan.nextLine();
+                    switch(userInput) {
+                        case "1":
+                            break;
+                        case "2":
+                            break;
+                        default:
+                            break;
+                    }
 
                     break;
                 case "4":
